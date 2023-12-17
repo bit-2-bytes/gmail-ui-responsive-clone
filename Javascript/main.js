@@ -290,4 +290,4 @@ function openSidebar(app){
 
 setTimeout(()=>{
   document.getElementById("splash-screen").style.visibility = "hidden";
-},100)
+},7000)
