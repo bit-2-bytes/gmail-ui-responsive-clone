@@ -290,3 +290,7 @@ function openSidebar(app){
   var isOpen = document.getElementById(app).classList.contains('slide-in');
    document.getElementById(app).setAttribute('class', isOpen ? 'slide-out' : 'slide-in');
 }
+
+setTimeout(()=>{
+  document.getElementById("splash-screen").style.visibility = "hidden";
+},7000)
