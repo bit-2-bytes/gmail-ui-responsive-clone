@@ -1,0 +1,109 @@
+#calendar-app, #contacts-app{
+    margin-left: 100vw;
+    width: 300px;
+    height: 100vh;
+    position: absolute;
+    top: 0px;
+    background-color: white;
+    border-left: 1px solid lightgray;
+  }
+  #navigations-app{
+    /* margin-left: -220px; */
+    width: 220px;
+    height: 100vh;
+    position: absolute;
+    top: 0px;
+    background-color: white;
+    border-left: 1px solid lightgray;
+  }
+  .contacts-app-text{
+    padding-left: 20px;
+  }
+  .blue{
+    font-size: 14px;
+    padding: 10px;
+    color: rgba(0, 0, 255, 0.737);
+    cursor: pointer;
+    font-weight: 700;
+    border-radius: 15px;
+  }
+  .blue:hover{
+     background-color: var(--middle-gray);
+  }
+.slide-in {
+
+  animation: slide-in 0.5s forwards;
+  transform: translateX(-100%);
+}
+.slide-out {
+  animation: slide-out 0.5s forwards;
+}
+@keyframes slide-in {
+  100% { transform: translateX(0%); }
+}
+@keyframes slide-out {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-100%); }
+}
+
+.label-plus-rotate{
+    transform: rotate(45deg);
+}
+.calendar-header, .contacts-header{
+    padding: 15px;
+}
+.app-name{
+    font-size: 14px;
+    color: grey;
+}
+.app-date{
+    background-color: var(--middle-gray);
+    margin-top: 5px;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 3px;
+}
+.calendar-header-lower-left{
+    display: flex;
+    align-items: center;
+}
+.today-box{    
+    border: 1px solid grey;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+.timeline{
+    border: 0.5px solid lightgrey;
+    width: 100%;
+}
+.time-value{
+    width: 60px;
+}
+.time-sheet{
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
+}
+.contacts-app-name{
+    font-size: 18px;
+    font-weight: 600;
+}
+.individual-contact{
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 14px;
+    margin-left: 20px;
+}
+.round-name{
+    width: 40px;
+    height: 40px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    border-radius: 50%;
+    font-weight: 400;
+}

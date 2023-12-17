@@ -1,0 +1,62 @@
+@media only screen and (max-width: 850px) {
+    .tab-remove{
+        display: none;
+    }
+    .mail-preview-name-comp{
+        width: 50px;
+    }
+    .tab-show{
+        display: block;
+      }
+      .mail-list-preview {
+        max-height: 10vh;
+      }
+      .low-font{
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .mobile-remove{
+        display: none;
+    }
+    
+    .mobile-show{
+        display: block;
+      }
+      .header-comp {
+        box-shadow: none;
+      }
+      .search-container {
+        margin: 5px 10px;
+      }
+      .mobile-text{
+        margin-left: 10px;
+        font-weight: 400px;
+        font-size: 14px;
+      }
+      .mails-list{
+          height: 82vh;
+      }
+      #calendar-app, #contacts-app {
+        width : 220px;
+      }
+}
+.mobile-footer{
+    height: 8vh;
+    background: var(--middle-gray);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.logo-footer{
+    width: 60px;
+    height: 40px;
+    padding: 8px;
+    border-radius: 20px !important;
+}
+.logo-footer:hover{
+    cursor: pointer;
+    transition: all 0.3s;
+    background-color: var(--dark-gray);
+}

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gmail- UI mock up</title>
+    <link rel="stylesheet" href="./css/style.css"></link>
+    <link rel="stylesheet" href="./css/slider-app.css"></link>
+    <link rel="stylesheet" href="./css/media-styles.css"></link>
+    <link rel="icon" type="image/x-icon" href="./assets/png/logo-64.png" />
+</head>
+<body>
+    <header class="header-comp">
+        <div class="logo-container mobile-remove">
+            <img src = "./assets/SVG/hamburger-menu.svg" class="logo-hover" alt="menu icon"/>
+            <div class="logo-image">
+                <img src = "./assets/png/gmail-logo-header.png" alt="gmail-logo"/>
+            </div>
+        </div>
+        <div class="search-container">
+            <img src = "./assets/SVG/search-icon.svg" class="logo-hover mobile-remove" alt="search"/>
+            <img src = "./assets/SVG/hamburger-menu.svg" onclick="openSidebar('navigations-app')" class="logo-hover mobile-show" alt="menu icon"/>
+            <input placeholder="Search in emails">
+            <img src = "./assets/png/profile.jpeg" class="logo-hover profile-image mobile-show" alt="profile image"/> 
+        </div>
+        <div class="profile-container mobile-remove">
+            <img src = "./assets/png/profile.jpeg" class="logo-hover profile-image" alt="profile image"/> 
+            <img src = "./assets/SVG/all-apps.svg" class="logo-hover" alt="show all apps"/> 
+            <img src = "./assets/SVG/settings.svg" class="logo-hover" alt="settings"/> 
+            <img src = "./assets/SVG/help.svg" class="logo-hover" alt="help"/> 
+        </div>
+    </header>
+    <section class="main-container">
+        <nav class="side-navbar mobile-remove">
+            <button class="compose-button">
+                <img src="./assets/SVG/compose-button.svg" alt="compose an email">
+                <span>Compose</span>
+            </button>
+            <div class="side-navbar">
+                <div class="nav-elements selected">
+                    <img src="./assets/SVG/inbox.svg" alt="Open Inbox">
+                    <span>Inbox</span>
+                    <span class="notified-nav">3</span>
+                </div>
+                <div class="nav-elements">
+                    <img src="./assets/SVG/starred.svg" alt="Open starred">
+                    <span>Starred</span>
+                </div>
+                <div class="nav-elements">
+                    <img src="./assets/SVG/snoozed.svg" alt="Open snoozed">
+                    <span>Snoozed</span>
+                </div>
+                <div class="nav-elements">
+                    <img src="./assets/SVG/sent.svg" alt="Open sent">
+                    <span><b>Sent</b></span>
+                    <span class="notified-nav"><b>1</b></span>
+                </div>
+                <div class="nav-elements">
+                    <img src="./assets/SVG/drafts.svg" alt="Open Draft">
+                    <span>Draft</span>
+                </div>
+                <div class="nav-elements">
+                    <img src="./assets/SVG/trash.svg" alt="Open trash">
+                    <span>Bin</span>
+                </div>
+                <div class="nav-elements">
+                    <img src="./assets/SVG/more.svg" alt="More">
+                    <span>More</span>
+                </div>
+                <div class="labels-container">
+                    <span>Lables</span>
+                    <img src = "./assets/png/plus button.png" class="logo-hover label-plus" alt="add more"/> 
+                </div>
+                <div class="nav-elements">
+                    <img src="./assets/SVG/labels.svg" alt="labels">
+                    <span>Kissflow</span>
+                </div>
+                <div class="nav-base-container">
+                  <span><b>Meet</b></span>
+                  <div class="nav-elements">
+                    <img src="./assets/SVG/video.svg" alt="new meeting">
+                    <span>New Meeting</span>
+                </div>
+                <div class="nav-elements">
+                    <img src="./assets/SVG/keyboard.svg" alt="join meeting">
+                    <span>Join a meeting</span>
+                </div>
+                </div>
+              </div>
+        </nav>
+        <main class="mail-container">
+        
+        </main>
+        <aside class="right-side-container mobile-remove">
+            <!-- <div class="bare-bone"></div> -->
+            <div class="right-side-apps">
+                <img onclick="openSidebar('calendar-app')" src = "./assets/png/calendar.png" class="logo-hover right-side-icons" alt="calender"/>
+                <img src = "./assets/png/insights.png" class="logo-hover right-side-icons" alt="insights"/>
+                <img src = "./assets/png/notes.png" class="logo-hover right-side-icons" alt="notes"/>
+                <img onclick="openSidebar('contacts-app')"src = "./assets/png/profile-icon.png" class="logo-hover right-side-icons" alt="profile"/>
+                <img src = "./assets/png/plus button.png" class="logo-hover right-side-icons add-icon" alt="add more"/>  
+            </div>
+        </aside>
+    </section>
+    <section id="calendar-app" class="slide-in">
+       <header class="calendar-header">
+          <div class="calendar-header-left">
+           <span class="app-name"><b>CALENDAR</b></span>
+           <span class="app-date"><b>Sun, 17 Dec</b></span>
+          </div>
+          <div class="calendar-header-right">
+            <img src = "./assets/SVG/open new.svg" onclick="window.open('https://calendar.google.com/', '_blank');" class="logo-hover" alt="open calendar"/> 
+            <img src = "./assets/png/plus button.png" onclick="openSidebar('calendar-app')" class="logo-hover label-plus-rotate" alt="close"/> 
+          </div>
+       </header>
+       <header class="calendar-header">
+        <div class="calendar-header-lower-left">
+         <span class="today-box">Today</span>
+         <img src="./assets/SVG/left-arrow.svg" class="logo-hover"/>
+         <img src="./assets/SVG/right-arrow.svg" class="logo-hover"/>
+        </div>
+        <div class="calendar-header-right">
+            <img src="./assets/SVG/three-dots.svg" class="logo-hover"/>
+        </div>
+     </header>
+      <hr>
+      <div class="time-sheet">
+        <span class="time-value">1 Am</span>
+        <div class="timeline"></div>
+      </div><br>
+      <div class="time-sheet">
+        <span class="time-value">2 Am</span>
+        <div class="timeline"></div>
+      </div><br>
+      <div class="time-sheet">
+        <span class="time-value">3 Am</span>
+        <div class="timeline"></div>
+      </div><br>
+      <div class="time-sheet">
+        <span class="time-value">4 Am</span>
+        <div class="timeline"></div>
+      </div><br>
+      <div class="time-sheet">
+        <span class="time-value">5 Am</span>
+        <div class="timeline"></div>
+      </div><br>
+      <div class="time-sheet">
+        <span class="time-value">6 Am</span>
+        <div class="timeline"></div>
+      </div><br>
+      <div class="time-sheet">
+        <span class="time-value">7 Am</span>
+        <div class="timeline"></div>
+      </div><br>
+      <div class="time-sheet">
+        <span class="time-value">8 Am</span>
+        <div class="timeline"></div>
+      </div><br>
+      <div class="time-sheet">
+        <span class="time-value">9 Am</span>
+        <div class="timeline"></div>
+      </div><br>
+      <div class="time-sheet">
+        <span class="time-value">10 Am</span>
+        <div class="timeline"></div>
+      </div><br>
+      <div class="time-sheet">
+        <span class="time-value">11 Am</span>
+        <div class="timeline"></div>
+      </div><br>
+      <div class="time-sheet">
+        <span class="time-value">12 Am</span>
+        <div class="timeline"></div>
+      </div><br>
+    </section>
+    <section id="contacts-app" class="slide-in">
+        <header class="contacts-header">
+            <div class="contacts-header-left">
+                <span class="contacts-app-name">Contacts</span>
+            </div>
+            <div class="contacts-header-right">
+              <img src = "./assets/SVG/search-icon.svg" class="logo-hover" alt="search"/>
+              <img src = "./assets/SVG/open new.svg" onclick="window.open('https://contacts.google.com/', '_blank');" class="logo-hover" alt="open contacts"/> 
+              <img src = "./assets/png/plus button.png" onclick="openSidebar('contacts-app')" class="logo-hover label-plus-rotate" alt="close"/> 
+            </div>
+         </header>
+         <p class="contacts-app-text blue">+ Create contact</p>
+         <p class="contacts-app-text">Contacts (3)</p><br>
+         <div class="individual-contact">
+            <div class="round-name" style="background-color: rgb(42, 165, 58);">A</div>
+            <span class="name">Ajai S S</span>
+         </div>
+         <div class="individual-contact">
+            <div class="round-name" style="background-color: rgb(42, 126, 165);">H</div>
+            <span class="name">Hari Shankar</span>
+         </div>
+         <div class="individual-contact">
+            <div class="round-name" style="background-color: brown;">H</div>
+            <span class="name">Harsha</span>
+         </div>
+    </section>
+    <section id="navigations-app" class="slide-out">
+      Gmail
+    </section>
+    <script src="./Javascript/main.js"></script>
+</body>
+</html>
