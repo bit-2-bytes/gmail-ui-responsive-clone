@@ -247,9 +247,10 @@ function renderMail(){
         <img src="./assets/SVG/delete-email.svg" alt="labels" class="logo-hover">
     </div>
     <div class="mail-bar-top-right">
-        <span>1-17 of 17</span>
-        <img src="./assets/SVG/left-arrow.svg" class="logo-hover"/>
-        <img src="./assets/SVG/right-arrow.svg" class="logo-hover"/>
+        <img src="./assets/SVG/three-dots.svg" alt="three-dots" class="logo-hover mobile-show">
+        <span class="mobile-remove">1-17 of 17</span>
+        <img src="./assets/SVG/left-arrow.svg" class="logo-hover  mobile-remove"/>
+        <img src="./assets/SVG/right-arrow.svg" class="logo-hover  mobile-remove"/>
     </div>
  </section>
  <section class="mail-bar-middle mail-bar-element">
@@ -267,7 +268,7 @@ function renderMail(){
             <span>to me</span>
         </div>
     </div>
-    <div class="mail-bar-below-right">
+    <div class="mail-bar-below-right mobile-remove">
         <img src="./assets/SVG/star.svg"/>
         <span>18 Jun 2023, 13:49</span>
     </div>
@@ -277,20 +278,16 @@ function renderMail(){
  </section>`;
 }
 
-function getRandomColor() {
-  var letters = "0123456789ABCDEF";
-  var color = "#";
-  for (var i = 0; i < 6; i++) {
-    color += letters[Math.floor(Math.random() * 16)];
-  }
-  return color + "fa";
-}
+
 
 function openSidebar(app){
+  if(app !== "navigations-app") document.getElementById("navigations-app").setAttribute('class', 'slide-out');
+  if(app !== "calendar-app") document.getElementById("calendar-app").setAttribute('class', 'slide-in');
+  if(app !== "contacts-app") document.getElementById("contacts-app").setAttribute('class', 'slide-in');
   var isOpen = document.getElementById(app).classList.contains('slide-in');
    document.getElementById(app).setAttribute('class', isOpen ? 'slide-out' : 'slide-in');
 }
 
 setTimeout(()=>{
   document.getElementById("splash-screen").style.visibility = "hidden";
-},7000)
+},1000)

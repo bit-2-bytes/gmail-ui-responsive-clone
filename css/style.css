@@ -342,4 +342,9 @@ body {
     font-size: 10px;
     color: white;
 }
-  
+  .gmail-heading{
+    margin: 20px;
+    font-size: 16px;
+    display: flex;
+    font-weight: 500;
+}
